@@ -1,0 +1,22 @@
+{
+  "name": "clipy",
+  "version": "1.0.0",
+  "description": "Copy to clipboard",
+  "homepage": "https://ktfth.github.io/clipy",
+  "repository": "ktfth/clipy",
+  "license": "MIT",
+  "main": "dist/clipboard.js",
+  "keywords": [
+    "copy",
+    "clipboard",
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm run build-debug && npm run build-min",
+    "build-debug": "webpack",
+    "build-min": "cross-env NODE_ENV=production webpack",
+    "build-watch": "webpack --watch",
+    "prepublish": "npm run build"
+  }
+}
