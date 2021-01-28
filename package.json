@@ -8,10 +8,12 @@
   "main": "dist/clipboard.js",
   "keywords": [
     "copy",
-    "clipboard",
+    "clipboard"
   ],
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^5.18.0"
+  },
   "scripts": {
     "build": "npm run build-debug && npm run build-min",
     "build-debug": "webpack",
